@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD6DE7032373CDC7002884CF /* BuyTicketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6DE7022373CDC7002884CF /* BuyTicketsView.swift */; };
 		ADF2229B2371255700366D1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF2229A2371255700366D1E /* AppDelegate.swift */; };
 		ADF2229D2371255700366D1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF2229C2371255700366D1E /* SceneDelegate.swift */; };
 		ADF2229F2371255700366D1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF2229E2371255700366D1E /* ContentView.swift */; };
 		ADF222A12371255900366D1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF222A02371255900366D1E /* Assets.xcassets */; };
 		ADF222A42371255900366D1E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF222A32371255900366D1E /* Preview Assets.xcassets */; };
 		ADF222A72371255900366D1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF222A52371255900366D1E /* LaunchScreen.storyboard */; };
+		ADF222B12372043E00366D1E /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF222B02372043E00366D1E /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD6DE7022373CDC7002884CF /* BuyTicketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyTicketsView.swift; sourceTree = "<group>"; };
 		ADF222972371255700366D1E /* Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF2229A2371255700366D1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADF2229C2371255700366D1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		ADF222A32371255900366D1E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ADF222A62371255900366D1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADF222A82371255900366D1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADF222B02372043E00366D1E /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				ADF2229C2371255700366D1E /* SceneDelegate.swift */,
 				ADF2229E2371255700366D1E /* ContentView.swift */,
 				ADF222A02371255900366D1E /* Assets.xcassets */,
+				ADF222B02372043E00366D1E /* Movie.swift */,
+				AD6DE7022373CDC7002884CF /* BuyTicketsView.swift */,
 				ADF222A52371255900366D1E /* LaunchScreen.storyboard */,
 				ADF222A82371255900366D1E /* Info.plist */,
 				ADF222A22371255900366D1E /* Preview Content */,
@@ -148,7 +154,9 @@
 			files = (
 				ADF2229B2371255700366D1E /* AppDelegate.swift in Sources */,
 				ADF2229D2371255700366D1E /* SceneDelegate.swift in Sources */,
+				AD6DE7032373CDC7002884CF /* BuyTicketsView.swift in Sources */,
 				ADF2229F2371255700366D1E /* ContentView.swift in Sources */,
+				ADF222B12372043E00366D1E /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
