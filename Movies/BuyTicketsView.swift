@@ -86,13 +86,17 @@ struct BuyTicketsView: View {
                     //Buttons
                     HStack(spacing: 16) {
                         ForEach(self.topDays) { day in
-                            DayButton(day: day, size: geo.size)
+                            DayButton(day: day, size: geo.size, selectedDay: self.selectedDay, tapHandler: { (d) in
+                                self.selectedDay = d
+                            })
                         }
                     }.padding(.horizontal, 16)
                     
                     HStack(spacing: 16) {
                         ForEach(self.middleDays) { day in
-                            DayButton(day: day, size: geo.size)
+                            DayButton(day: day, size: geo.size, selectedDay: self.selectedDay, tapHandler: { (d) in
+                                self.selectedDay = d
+                            })
                         }
                     }.padding(.horizontal, 16)
                 }
@@ -100,6 +104,8 @@ struct BuyTicketsView: View {
             Spacer()
         }
     }
+    
+    @State var selectedDay: Day?
 }
 
 struct DayButton: View {
@@ -107,17 +113,25 @@ struct DayButton: View {
     let day: Day
     let size: CGSize
     
+    var selectedDay: Day?
+    var tapHandler: ((Day) -> ())?
+    
+    
     var body: some View {
         Button(action: {
-            
+            self.tapHandler?(self.day)
         }, label:  {
             VStack(spacing: 8) {
                 Text("MAR")
-                    .font(.system(size: 14, weight: .bold))
-                    .foregroundColor(.gray)
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundColor((self.selectedDay?.day != day.day) ? Color.gray : Color.white)
                 Text(day.day)
+                .font(.system(size: 18, weight: .bold))
+                .foregroundColor((self.selectedDay?.day != day.day) ? Color.black : Color.white)
                 Text(day.daysOfWeek)
                     .font(.system(size: 8, weight: .bold))
+                    .foregroundColor((self.selectedDay?.day != day.day) ? Color.black : Color.white)
+
             }.padding(.vertical, 8)
             
         }).foregroundColor(.black)
@@ -126,7 +140,8 @@ struct DayButton: View {
             .overlay(
                 RoundedRectangle(cornerRadius: 12)
                     .stroke(Color.gray, lineWidth: 1)
-        )
+            )
+            .background((self.selectedDay?.day == day.day) ? Color.red : Color.white)
     }
 }
 
