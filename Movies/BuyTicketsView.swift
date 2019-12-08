@@ -150,8 +150,8 @@ struct Day: Identifiable {
     let month, day, daysOfWeek: String
 }
 
-struct BuyTicketsView_Previews: PreviewProvider {
-    static var previews: some View {
-        BuyTicketsView()
-    }
-}
+//struct BuyTicketsView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        BuyTicketsView()
+//    }
+//}

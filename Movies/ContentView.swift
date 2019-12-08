@@ -92,3 +92,9 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+struct BuyTicketsView_Previews: PreviewProvider {
+    static var previews: some View {
+        BuyTicketsView()
+    }
+}
